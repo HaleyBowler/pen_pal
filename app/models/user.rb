@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
 
   acts_as_messageable
 
+  has_many :languages
+
 def mailboxer_email(object)
   #Check if an email should be sent for that object
   #if true
