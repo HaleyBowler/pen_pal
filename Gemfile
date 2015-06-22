@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'paperclip'
 gem 'chosen-rails'
 gem 'jquery-turbolinks'
 
-
-gem 'paperclip'
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 
 gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
