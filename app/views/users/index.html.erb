@@ -1,9 +1,9 @@
-Welcome!
-
-<%= current_user.languages.name %>
+Welcome!<br/>
 
 <table class="users_list">
+<ul>
 <% @users.each do |user| %>
-  <%= render partial: "display", locals: {user: user} %>
+  <li><%= render partial: "display", locals: {user: user, languages: current_user.languages} %></li>
 <% end %>
+</ul>
 </table>
