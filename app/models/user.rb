@@ -1,9 +1,8 @@
 class User < ActiveRecord::Base
 
   acts_as_messageable
-
-  #has_many :spoken_languages, :class_name => 'languages' through :teacher
-  #has_many :desired_languages, :class_name => 'languages' thorugh :learner
+  has_many :proficiencies
+  has_many :languages, through: :proficiencies
 
 def mailboxer_email(object)
   #Check if an email should be sent for that object

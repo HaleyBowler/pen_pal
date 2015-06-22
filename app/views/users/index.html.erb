@@ -18,14 +18,12 @@
 	</header>
 	<body>
 		<br \>
-		<p>
-			These are the user profiles
-			<br \>
-			Henry
-			<br \>
-			Pedro
-			<br \>
-			Alyssa
-		</p>
+		<table class="users_list">
+			<ul>
+				<% @users.each do |user| %>
+				<li><%= render partial: "display", locals: {user: user, languages: current_user.languages} %></li>
+				<% end %>
+			</ul>
+		</table>
 	</body>
 	</html>
