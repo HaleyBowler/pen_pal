@@ -3,7 +3,7 @@
 	<ul>
 		<% @users.each do |user| %>
 		<% if user != current_user %>
-		<li class="random-users"><%= render partial: "display", locals: {user: user, languages: user.languages} %></li>
+		<li class="random-users"><%= render partial: "display", locals: {user: user, languages: user.languages} %></li><br \>
 		<% end %>
 		<% end %>
 	</ul>
