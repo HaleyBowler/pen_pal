@@ -34,10 +34,6 @@ $fancy-font-family: Lora, sans-serif;
     	list-style-type: none;
     }
 
-    .user {
-    	display: inline; 
-    }
-
 h1 {
 	font-family: $secondary-font-family;
 	font-size: 100px;
@@ -77,6 +73,38 @@ header {
 	font-size: 20px;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 ul {
 	text-align: center;
 }
+
+.navbar_categories {
+	text-align: right;
+	list-style-type: none;
+	padding: 20px;
+}
+
+.chatable {
+	font-size: 40px;
+	text-align: left;
+	padding: 10px;
+	font-family: $secondary-font-family;
+	color: white;
+}
+
+
+.toolbarcategories {
+	display: inline;
+	padding: 20px;
+}
+
+.random-users {
+	list-style-type: none;
+}
+
+
+
