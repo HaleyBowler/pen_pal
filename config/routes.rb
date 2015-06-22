@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :conversations, only: [:index, :show, :destroy]
   resources :messages, only: [:new, :create]
-
+  # resources :languages, only: [:new]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

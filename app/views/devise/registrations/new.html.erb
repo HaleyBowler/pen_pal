@@ -19,13 +19,6 @@
     <%= f.email_field :email %>
   </div>
 
-   <div class="field">
-    <%= f.fields_for :language do |s| %>
-      <%= s.label :name %><br />
-      <%= s.text_field :name %>
-    <% end %>
-  </div>
-
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
