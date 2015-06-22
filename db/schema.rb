@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20150622120553) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "learners", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "language_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|
     t.integer "unsubscriber_id"
     t.string  "unsubscriber_type"
