@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
 
   acts_as_messageable
+  has_many :proficiencies
+  has_many :languages, through: :proficiencies
+
 
   #has_many :spoken_languages, :class_name => 'languages' through :teacher
   #has_many :desired_languages, :class_name => 'languages' thorugh :learner
