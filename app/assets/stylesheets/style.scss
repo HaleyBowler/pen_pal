@@ -86,6 +86,7 @@ ul {
 	text-align: right;
 	list-style-type: none;
 	padding: 20px;
+	color: white;
 }
 
 .chatable {
@@ -94,12 +95,17 @@ ul {
 	padding: 10px;
 	font-family: $secondary-font-family;
 	color: white;
+	
+	&:hover, &:visited {
+		text-decoration: none;
+		color: white;
+	}
 }
-
 
 .toolbarcategories {
 	display: inline;
 	padding: 20px;
+	a {  color: white; }
 }
 
 .random-users {
