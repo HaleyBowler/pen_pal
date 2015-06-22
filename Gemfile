@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'chosen-rails'
+gem 'jquery-turbolinks'
+
+
 gem 'paperclip'
 
 gem 'bootstrap-sass'
