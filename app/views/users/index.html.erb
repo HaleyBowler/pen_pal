@@ -21,7 +21,9 @@
 		<table class="users_list">
 			<ul>
 				<% @users.each do |user| %>
-				<li><%= render partial: "display", locals: {user: user, languages: current_user.languages} %></li>
+				<% if user != current_user %>
+				<li><%= render partial: "display", locals: {user: user, languages: user.languages} %></li>
+				<% end %>
 				<% end %>
 			</ul>
 		</table>
