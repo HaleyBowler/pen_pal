@@ -1,5 +1,5 @@
 <%= user.first_name %>
-<br/>
+<br/><%= image_tag user.avatar.url(:medium) %><br/>
 <% languages.each do |language| %>
 	<%= language.name %>
 <% end %>
