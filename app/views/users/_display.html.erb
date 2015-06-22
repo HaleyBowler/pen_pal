@@ -1,5 +1,21 @@
-<%= user.first_name %>
+<!--<%= user.first_name %>
 <br/><%= image_tag user.avatar.url(:medium) %><br/>
 <% languages.each do |language| %>
 	<%= language.name %>
-<% end %>
+<% end %>-->
+
+    <div class="col-lg-5">
+        <div class="media">
+            <a class="pull-left" href="#">
+            	<%= image_tag user.avatar.url(:medium) %>
+            </a>
+            <div class="media-body">
+            	<h4 class="media-heading"><%= user.first_name %>  <%= user.last_name %><small> <%= user.location %></small></h4>
+            	<hr style="margin:8px auto">
+            	<% languages.each do |language| %>
+            		<span class="label label-default"><%= language.name %></span>
+            	<% end %>
+            </div>
+        </div>
+
+    </div>
