@@ -9,9 +9,9 @@
 
 
 User.destroy_all
-user = User.create(first_name: "Jason", last_name: "haas", email: "jasonbhaas@gmail.com", password: "1234", password_confirmation: "1234")
-other_user = User.create(first_name: "Haley", last_name: "Bowler", email: "hjb2dq@virginia.edu", password: "1234", password_confirmation: "1234")
-last_user = User.create(first_name: "Rachel", last_name: "Knapp", email: "rachelknapp@college.harvard.edu", password: "1234", password_confirmation: "1234")
+user = User.create(first_name: "Jason", last_name: "haas", email: "jasonbhaas@gmail.com", password: "1234", password_confirmation: "1234", location: "Cape Town")
+other_user = User.create(first_name: "Haley", last_name: "Bowler", email: "hjb2dq@virginia.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
+last_user = User.create(first_name: "Rachel", last_name: "Knapp", email: "rachelknapp@college.harvard.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
 
 Language.destroy_all
 eng = Language.create(name: 'English')
