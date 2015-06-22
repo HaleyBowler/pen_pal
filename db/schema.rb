@@ -11,18 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150620134806) do
+ActiveRecord::Schema.define(version: 20150622120553) do
 
   create_table "languages", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "learners", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "language_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|
@@ -78,9 +72,10 @@ ActiveRecord::Schema.define(version: 20150620134806) do
   add_index "mailboxer_receipts", ["notification_id"], name: "index_mailboxer_receipts_on_notification_id"
   add_index "mailboxer_receipts", ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type"
 
-  create_table "teachers", force: :cascade do |t|
+  create_table "proficiencies", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "language_id"
+    t.integer  "level"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
