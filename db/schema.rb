@@ -14,16 +14,8 @@
 ActiveRecord::Schema.define(version: 20150622120553) do
 
   create_table "languages", force: :cascade do |t|
-    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "learners", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "language_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|
