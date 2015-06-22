@@ -17,6 +17,13 @@
     <%= f.email_field :email %>
   </div>
 
+  <div class="field">
+    <%= f.fields_for :language do |s| %>
+      <%= s.label :name %><br />
+      <%= s.text_field :name %>
+    <% end %>
+  </div>
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
