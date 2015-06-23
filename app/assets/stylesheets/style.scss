@@ -12,14 +12,14 @@ body {
 
 h1 {
 	font-family: $secondary-font-family;
-	font-size: 160px;
+	font-size: 200px;
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 h3 {
 	font-family: $primary-font-family;
-	font-size: 35px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -69,15 +69,11 @@ ul {
 
 .container_2 {
 	height: 700px;
-	background-color: black;
-}
-
-.container_3 {
-	height: 700px;
+	background-color: white;
 }
 
 .jumbotron-main {
-	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
+	background: url(http://i.imgur.com/pFatem5.jpg);
 	background-size: cover;
 	padding-bottom: 320px;
 	background-position: top;
@@ -86,7 +82,7 @@ ul {
 }
 
 .jumbotron-second {
-	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
+	background: url(http://i.imgur.com/j1mR479.jpg);
 	background-size: cover;
 	padding-bottom: 320px;
 	background-position: top;
@@ -156,10 +152,34 @@ ul {
 	color: black;
 }
 
-.row_two_categories {
-	font-family: $primary-font-family;
-	font-size: 60 px;
+.row_one_third {
+	font-family: $fancy-font-family;
+	font-size: 18px;
 	text-align: center;
-	font-size: 25px;
-	color: white;
+	color: black;
+}
+
+.row_two {
+	font-family: $primary-font-family;
+	text-align: center;
+	font-size: 60px;
+	color: black;
+}
+
+
+.row_two_categories {
+	font-family: $fancy-font-family;
+	font-size: 20 px;
+	text-align: center;
+	color: black;
+}
+
+.display-img {
+  width: 100%;
+  padding: 10px;
+}
+
+.display-img2 {
+	width: 50%;
+  padding: 10px;
 }
