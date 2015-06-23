@@ -24,7 +24,7 @@
           <li class="toolbarcategories"><%= link_to 'YOUR MESSAGES', conversations_path %></li>
           <li class="toolbarcategories"><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete %></li>
         <% else %>
-          <li><%= link_to 'Log In', new_user_session_path %></li>
+          <li class="toolbarcategories"><%= link_to 'LOG IN', new_user_session_path %></li>
         <% end %>
       </ul>
     </div>
