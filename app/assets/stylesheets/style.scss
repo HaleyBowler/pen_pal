@@ -6,6 +6,10 @@ $primary-font-family: Poiret One, sans-serif;
 $secondary-font-family: Maven Pro, sans-serif;
 $fancy-font-family: Lora, sans-serif;
 
+body {
+	padding-top: 50px;
+}
+
   .media
     {
         /*box-shadow:0px 0px 4px -2px #000;*/
@@ -38,9 +42,10 @@ h1 {
 	font-family: $secondary-font-family;
 	font-size: 100px;
 	text-align: center;
+	margin-top: 60px;
 }
 
-div 
+.container 
 	{
 	font-family: $primary-font-family;
 	}
@@ -56,11 +61,6 @@ p {
 	font-size: 20px;
 	margin-left: 30px;
 	margin-right: 30px;
-}
-
-body {
-	margin: 0;
-	padding: 0;
 }
 
 .first_row {
@@ -83,6 +83,10 @@ ul {
 	text-align: center;
 }
 
+.navbar {
+	margin: 0;
+}
+
 .navbar_categories {
 	text-align: right;
 	list-style-type: none;
@@ -99,6 +103,7 @@ ul {
 	font-family: $secondary-font-family;
 	color: white;
 	margin-left: 20px;
+	margin-top: 60px;
 	
 	&:hover, &:visited {
 		text-decoration: none;
@@ -115,6 +120,4 @@ ul {
 .random-users {
 	list-style-type: none;
 }
-
-
 

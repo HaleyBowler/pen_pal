@@ -1,48 +1,22 @@
-<!-- Start views/users/index -->
-<div class="first_row">
-	<row class="welcomeheader">
-<div id="container">
-<!--p class="notice"><%= notice %></p-->
-  <!--p class="alert"><%= alert %></p-->
-  <!--nav class="navbar navbar-inverse"-->
-    <!--div class="container"-->
-      <div class="navbar-header">
-        <%= link_to 'chatable', root_path, class: 'chatable'%>
-      </div>  
-      <ul class="navbar_categories">
-        <% if user_signed_in? %>
-          <li class="toolbarcategories"><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li class="toolbarcategories"><%= link_to 'LOG IN', new_user_session_path %></li>
-        <% end %>
-      </ul>
+	<div class="first_row">
+		<row class="welcomeheader">
+			<h1> chatable </h1>
+			<h3> connecting a diverse world through online messaging, 
+				<br \>
+				one language at a time...
+			</h3>
+		</row>
 </div>
-</nav>
-<header>
-<br \> <br /> <br /> <br \>
-	<h1> chatable </h1>
-	<h3> connecting a diverse world through online messaging, 
-		<br \>
-		one language at a time...
-	</h3>
-	<br \>
-	<br \>
-	<br \>
-	<br \>
-	<ul>
-	<!-- TODO: fix links -->
-		<li class="welcome-page-link"><a href="http://localhost:3000/users/edit">PROFILE</a></li>
-		<li class="welcome-page-link"><a href="http://localhost:3000/conversations">MESSAGES</a></li>
-		<li class="welcome-page-link"><a href="#">EVENTS</a></li>
-		<li class="welcome-page-link"><a href="http://localhost:3000/users">PALS</a></li>
-	</ul>
-</header>
-</row>
-</div>
+
 <div class="second_row">
 	<row class="users">
-	USERS
-	USERS
-	USERS
+		<br \>
+		USERS<br \>
+		USERS<br \>
+		USERS<br \>
+		USERS<br \>
+		USERS<br \>
+		USERS<br \>
 	</row>
 </div>
+

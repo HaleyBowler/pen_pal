@@ -1,24 +1,4 @@
-<div id="container">
-<!--p class="notice"><%= notice %></p-->
-  <!--p class="alert"><%= alert %></p-->
-  <!--nav class="navbar navbar-inverse"-->
-    <!--div class="container"-->
-      <div class="navbar-header">
-        <%= link_to 'chatable', root_path, class: 'chatable'%>
-      </div>  
-      <ul class="navbar_categories">
-        <% if user_signed_in? %>
-          <li class="toolbarcategories"><%= link_to 'PROFILE', edit_user_registration_path %></li>
-          <li class="toolbarcategories"><%= link_to 'FIND PALS', users_path %></li>
-          <li class="toolbarcategories"><%= link_to 'YOUR MESSAGES', conversations_path %></li>
-          <li class="toolbarcategories"><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li class="toolbarcategories"><%= link_to 'LOG IN', new_user_session_path %></li>
-        <% end %>
-      </ul>
-</div>
-</nav>
-</div>
+
 
 <h2>Change your password</h2>
 
