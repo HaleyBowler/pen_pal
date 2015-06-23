@@ -1,12 +1,14 @@
 class RegistrationsController < Devise::RegistrationsController
 
+
   
   def after_sign_in_path_for(users)
     redirect_to home_index_path
   end
 
+
   before_filter :configure_permitted_parameters
-  protected
+
 
   # my custom fields are :name, :heard_how
   def configure_permitted_parameters
