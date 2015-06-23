@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
   end
  
   def create
+  	#TODO(Jason): fix this so that it only shows recipients added by the user
     recipients = User.where(id: params['recipients'])
     conversation = current_user.send_message(recipients, params[:message][:body], params[:message][:subject]).conversation
     flash[:success] = "Message has been sent!"
