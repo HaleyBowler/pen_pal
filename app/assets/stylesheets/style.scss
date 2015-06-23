@@ -58,12 +58,14 @@ p {
 	margin-right: 30px;
 }
 
-header {
+body {
 	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
 	background-size: cover;
 	padding-top: 30px;
-	padding-bottom: 300px;
+	padding-bottom: 320px;
 	background-position: top;
+	margin: 0;
+	padding: 0;
 }
 
 .welcome-page-link {
@@ -73,11 +75,6 @@ header {
 	font-size: 20px;
 }
 
-body {
-	margin: 0;
-	padding: 0;
-}
-
 ul {
 	text-align: center;
 }
@@ -85,16 +82,19 @@ ul {
 .navbar_categories {
 	text-align: right;
 	list-style-type: none;
-	padding: 20px;
-	color: white;
+	padding: 13px;
+	background: black;
+	vertical-align: middle;
+	margin: 0;
 }
 
 .chatable {
-	font-size: 40px;
+	font-size: 30px;
 	text-align: left;
 	padding: 10px;
 	font-family: $secondary-font-family;
 	color: white;
+	margin-left: 20px;
 	
 	&:hover, &:visited {
 		text-decoration: none;
