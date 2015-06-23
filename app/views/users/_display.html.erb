@@ -4,7 +4,7 @@
 	<%= language.name %>
 <% end %>-->
 
-    <div class="col-lg-5">
+    <div class="col-sm-4">
         <div class="media">
             <a class="pull-left" href="#">
             	<%= image_tag user.avatar.url(:medium) %>
@@ -19,5 +19,6 @@
             	<a><%= link_to "Message This User", new_message_path(:user => user.id), class: "btn btn-large btn-primary" %></a>
             </div>
         </div>
-
     </div>
+    
+

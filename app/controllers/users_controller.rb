@@ -2,6 +2,6 @@ class UsersController < ApplicationController
 	before_action :authenticate_user!
 
 	def index
-		@users = User.order("RANDOM()").limit(3)
+		@users = User.all.paginate(page: params[:page], per_page: 4)
 	end
 end

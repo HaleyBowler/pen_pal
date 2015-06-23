@@ -20,15 +20,19 @@
 </nav>
 </div>
 
-<table class="users_table">
-	<ul class="users_list">
+
+<div class="container">
+  <div class="row">
 		<% @users.each do |user| %>
-		<% if user != current_user %>
-			<li class="random-users"><%= render partial: "display", locals: {user: user, languages: user.languages} %></li><br \>
+		  <% if user != current_user %>
+			    <li class="random-users"><%= render partial: "display", locals: {user: user, languages: user.languages} %></li><br \>
+		  <% end %>
 		<% end %>
-		<% end %>
-	</ul>
-</table>
+  </div>
+</div>
+<%= will_paginate @users %>
+    
+
 
 
 
