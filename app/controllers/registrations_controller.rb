@@ -2,7 +2,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   
   def after_sign_in_path_for(users)
-    redirect_to users_path
+    redirect_to home_index_path
   end
 
   before_filter :configure_permitted_parameters
