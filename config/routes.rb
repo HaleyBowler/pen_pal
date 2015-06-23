@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'welcome/index'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
@@ -17,7 +18,6 @@ Rails.application.routes.draw do
 
   resources :messages, only: [:new, :create]
   resources :users, only: [:index]
-
 
   # resources :languages, only: [:new]
   # The priority is based upon order of creation: first created -> highest priority.
