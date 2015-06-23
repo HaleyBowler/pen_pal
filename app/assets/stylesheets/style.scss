@@ -59,13 +59,17 @@ p {
 }
 
 body {
+	margin: 0;
+	padding: 0;
+}
+
+.first_row {
 	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
 	background-size: cover;
 	padding-top: 30px;
 	padding-bottom: 320px;
 	background-position: top;
-	margin: 0;
-	padding: 0;
+	background-attachment: fixed;
 }
 
 .welcome-page-link {
