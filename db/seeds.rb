@@ -18,6 +18,9 @@ userrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "rafi@ixpe
 userrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "salman@ixperience.co.za", password: "1234", password_confirmation: "1234", location: "Cape Town")
 userrrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "esm7ft@verizon.net", password: "1234", password_confirmation: "1234", location: "Cape Town")
 userrrrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "eam3ye@virginia.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
+User.create(first_name: "Boo", last_name: "Radley", email: "racism@thesouth.com", password: "1234", password_confirmation: "1234", location: "Cape Town")
+User.create(first_name: "happy", last_name: "times", email: "disney@land.wahoo", password: "1234", password_confirmation: "1234", location: "Cape Town")
+
 
 Language.destroy_all
 eng = Language.create(name: 'English')
