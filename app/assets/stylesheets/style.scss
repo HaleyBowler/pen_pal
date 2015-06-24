@@ -9,6 +9,7 @@ $fancy-font-family: Lato, sans-serif;
 #users_search {
 margin: 20px auto;
 padding: 0px 70px;
+}
 
 img {
 display: block;
@@ -25,7 +26,6 @@ width: 320px;
 border-radius: 5px;
 font-size: 25px;
 padding: 5px 10px;
-}
 }
 
 .message-button {
@@ -147,7 +147,6 @@ font-size: 20px;
 }
 
 .navbar {
-<<<<<<< HEAD
 margin: 0;
 }
 
@@ -169,22 +168,16 @@ color: white;
 margin-left: 20px;
 margin-top: 60px;
 
+
 &:hover, &:visited {
-text-decoration: none;
-color: white;
-}
+	text-decoration: none;
+	color: white;
 	margin: 0 auto;
 	padding: 0;
 	background: black;
 }
-
-.navbar_categories {
-	text-align: right;
-	list-style-type: none;
-	padding: 13px;
-	vertical-align: middle;
-	margin: 0;
 }
+
 
 .chatable {
 	font-size: 30px;
@@ -288,12 +281,9 @@ font-size: 15px;
 }
 
 .row_editprofile {
-<<<<<<< HEAD
 height: 600px;
 padding: 0 auto;
 text-align: center;
-	padding: 0 auto;
-	text-align: center;
 }
 
 .form-horizontal {
@@ -403,7 +393,7 @@ h4 {
 }
 
 .active {
-	background-color: white;;
+	background-color: white;
 }
 
 .nav-pills {
