@@ -147,6 +147,7 @@ font-size: 20px;
 }
 
 .navbar {
+<<<<<<< HEAD
 margin: 0;
 }
 
@@ -172,6 +173,31 @@ margin-top: 60px;
 text-decoration: none;
 color: white;
 }
+	margin: 0 auto;
+	padding: 0;
+	background: black;
+}
+
+.navbar_categories {
+	text-align: right;
+	list-style-type: none;
+	padding: 13px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.chatable {
+	font-size: 30px;
+	text-align: left;
+	padding: 10px;
+	font-family: $secondary-font-family;
+	color: white;
+	margin-top: 60px;
+	
+	&:hover, &:visited {
+		text-decoration: none;
+		color: white;
+	}
 }
 
 .toolbarcategories {
@@ -262,9 +288,12 @@ font-size: 15px;
 }
 
 .row_editprofile {
+<<<<<<< HEAD
 height: 600px;
 padding: 0 auto;
 text-align: center;
+	padding: 0 auto;
+	text-align: center;
 }
 
 .form-horizontal {
@@ -311,7 +340,7 @@ padding: 10px;
 h4 {
 	font-family: $fancy-font-family;
 	font-size: 30px;
-	text-align: left;
+	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
@@ -322,14 +351,19 @@ h4 {
 }
 
 .titlebar {
-	background-color: #FF7E6B;
+	background-color: white;
 	margin: 0 auto;
 	padding: 0;
-	color: white;
+	color: black;
 }
 
 .messages_all {
 	height: 100%;
+}
+
+.mailbox_options {
+	background-color: white;
+
 }
 
 .column-xs-8 {
@@ -342,17 +376,17 @@ h4 {
     border: 0 none;
     font-weight: 200;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-family: $fancy-font-family;
 }
 
 .btn-primary {
-	background: #7A2921;
-	color: white;
+	background: #F2CCC3;
+	color: black;
 }
 
 .btn-danger {
 	background: #791205;
+	color: white;
 }
 
 .conversation_title {
@@ -363,3 +397,34 @@ h4 {
 	background-color: white;
 	color: black;
 }
+
+.nav-packed {
+	height: 800px;
+}
+
+.active {
+	background-color: white;;
+}
+
+.nav-pills {
+	color: white;
+	.active { 
+		a {
+			background-color: #3D1308 !important; 
+		}
+	}
+	li {
+		a:hover {
+			background-color: #F2CCC3;
+    		color: white;
+    	}
+
+    	a:focus {
+    		background-color: #3D1308 !important;
+    	}
+    	a:active {
+    		background-color: #3D1308 !important;
+    	}
+    	    	
+    }
+} 
