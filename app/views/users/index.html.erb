@@ -1,19 +1,12 @@
+<!--page to search through all the users -->
+
 <%= form_tag "/users", method: 'GET', id: 'users_search' do %>
   <%= text_field_tag 'q', params[:q] %>
   <div style="clear: both"></div>
 <% end %>
 <br/><br/>
-
-<div class="container user_table">
-  <div class="row">
-		<% @users.each do |user| %>
-		  <% if user != current_user %>
-      <div class="col-sm-4">
-			    <li class="random-users"><%= render partial: "display", locals: {user: user, languages: @languages} %></li><br \>
-          </div>
-		  <% end %>
-		<% end %>
-  </div>
+<div id= "users">
+  <%= render "users" %>
 </div>
 <%= will_paginate @users, renderer: BootstrapPagination::Rails %>
     
