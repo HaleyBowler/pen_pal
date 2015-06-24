@@ -9,7 +9,10 @@
   </div>
 </div>
 
-<a><%= link_to "Update Language Settings", edit_user_path(current_user), class: "btn btn-large btn-primary message-button" %></a>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Update Language Preferences
+</button>
 
 <div class="container user_table">
   <div class="row">
@@ -20,3 +23,5 @@
 		<% end %>
   </div>
 </div>
+
+<%= render partial: 'modal', locals: {user: @user} %>

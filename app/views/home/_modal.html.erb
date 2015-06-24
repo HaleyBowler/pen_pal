@@ -1,0 +1,26 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> close </button>
+        <h4 class="modal-title" id="myModalLabel">Language Preferences</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for user do |f| %>
+        <%= f.input :english, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+        <%= f.input :spanish, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' }  %>
+        <%= f.input :french, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+        <%= f.input :italian, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+        <%= f.input :german, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <%= button_tag(type: 'submit', class: "btn btn-primary edit-language-btn") do %>
+        <i class="icon-ok icon-white"></i>Update 
+        <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
