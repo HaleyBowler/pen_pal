@@ -267,6 +267,25 @@ ul {
 	text-align: center;
 }
 
+.form-horizontal {
+	margin: 30px;
+	padding: 10px;
+}
+
+.language-edit {
+	font-size: 50px; 
+}
+
+.edit-language-form {
+	margin: 50px;
+	padding: 20px;
+}
+
+.profile_pic {
+	width: 100px;
+	height: 100px;
+}
+
 h4 {
 	font-family: $fancy-font-family;
 	font-size: 30px;
@@ -312,4 +331,13 @@ h4 {
 
 .btn-danger {
 	background: #791205;
+}
+
+.conversation_title {
+	font-family: $fancy-font-family;
+	font-size: 25px;
+	text-align: left;
+	padding: 20px;
+	background-color: white;
+	color: black;
 }

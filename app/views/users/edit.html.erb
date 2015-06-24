@@ -1,4 +1,4 @@
-<%= form_for(@user, action: "/users/#{@user.id}", method: :put) do |f| %>
+<!--<%= form_for(@user, action: "/users/#{@user.id}", method: :put) do |f| %>
 
 <div class="field">
 	<%= f.label :english %><br />
@@ -20,5 +20,28 @@
 	<%= f.label :german %><br />
 	<%= f.select :german, options_for_select(%w[0 1 2 3 4 5]) %>
 </div>
-<%= f.submit %>
+    <%= f.submit %>
+<% end %>-->
+
+
+<div class="language-header">
+   <h1 class="language-edit">Language Settings
+      <small>Select your skill level from 0-5</small>
+   </h1>
+</div>
+<div class="edit-language-form">
+<%= simple_form_for @user do |f| %>
+  <%= f.input :english, :prompt => "Set your skill level", :collection => 0..5, wrapper_html: { class: 'language' } %>
+  <%= f.input :spanish, :collection => 0..5 %>
+  <%= f.input :french, :collection => 0..5 %>
+  <%= f.input :italian, :collection => 0..5 %>
+  <%= f.input :german, :collection => 0..5 %>
+   <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+    <i class="icon-ok icon-white"></i> Update
+  <% end %>
 <% end %>
+</div>
+
+
+
+
