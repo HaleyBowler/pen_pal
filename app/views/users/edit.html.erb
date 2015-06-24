@@ -32,11 +32,11 @@
 <div class="edit-language-form">
 <%= simple_form_for @user do |f| %>
   <%= f.input :english, :prompt => "Set your skill level", :collection => 0..5, wrapper_html: { class: 'language' } %>
-  <%= f.input :spanish, :collection => 0..5 %>
-  <%= f.input :french, :collection => 0..5 %>
-  <%= f.input :italian, :collection => 0..5 %>
-  <%= f.input :german, :collection => 0..5 %>
-   <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+  <%= f.input :spanish, :collection => 0..5, wrapper_html: { class: 'language' }  %>
+  <%= f.input :french, :collection => 0..5, wrapper_html: { class: 'language' } %>
+  <%= f.input :italian, :collection => 0..5, wrapper_html: { class: 'language' } %>
+  <%= f.input :german, :collection => 0..5, wrapper_html: { class: 'language' } %>
+   <%= button_tag(type: 'submit', class: "btn btn-primary edit-language-btn") do %>
     <i class="icon-ok icon-white"></i> Update
   <% end %>
 <% end %>
