@@ -9,15 +9,10 @@
 
 
 User.destroy_all
-user = User.create(first_name: "Jason", last_name: "haas", email: "jasonbhaas@gmail.com", password: "1234", password_confirmation: "1234", location: "Cape Town")
-other_user = User.create(first_name: "Haley", last_name: "Bowler", email: "hjb2dq@virginia.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
-last_user = User.create(first_name: "Rachel", last_name: "Knapp", email: "rachelknapp@college.harvard.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
-usr = User.create(first_name: "Rachel", last_name: "Knapp", email: "haleyjb123@gmail.com", password: "1234", password_confirmation: "1234", location: "Cape Town")
-userr = User.create(first_name: "Rachel", last_name: "Knapp", email: "bowlerchat@verizon.net", password: "1234", password_confirmation: "1234", location: "Cape Town")
-userrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "rafi@ixperience.co.za", password: "1234", password_confirmation: "1234", location: "Cape Town")
-userrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "salman@ixperience.co.za", password: "1234", password_confirmation: "1234", location: "Cape Town")
-userrrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "esm7ft@verizon.net", password: "1234", password_confirmation: "1234", location: "Cape Town")
-userrrrrr = User.create(first_name: "Rachel", last_name: "Knapp", email: "eam3ye@virginia.edu", password: "1234", password_confirmation: "1234", location: "Cape Town")
+user = User.create(first_name: "Jason", last_name: "haas", email: "jasonbhaas@gmail.com", password: "1234", password_confirmation: "1234", location: "Cape Town", english: 1, french: 1, spanish: 1, italian: 1, german: 1)
+other_user = User.create(first_name: "Haley", last_name: "Bowler", email: "hjb2dq@virginia.edu", password: "1234", password_confirmation: "1234", location: "Cape Town", english: 1, french: 1, spanish: 1, italian: 1, german: 1)
+last_user = User.create(first_name: "Rachel", last_name: "Knapp", email: "rachelknapp@college.harvard.edu", password: "1234", password_confirmation: "1234", location: "Cape Town", english: 1, french: 1, spanish: 1, italian: 1, german: 1)
+
 
 Language.destroy_all
 eng = Language.create(name: 'English')

@@ -15,11 +15,11 @@ class RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.for(:sign_up) do |u|
       u.permit(:first_name, :last_name, 
         :email, :password, :password_confirmation, :location, 
-        :avatar)
+        :avatar, :english, :spanish, :italian, :german, :french)
     end
     devise_parameter_sanitizer.for(:account_update) do |u|
       u.permit(:first_name, :last_name, :current_password,
-        :email, :location, :avatar)
+        :email, :password, :password_confirmation, :location, :avatar, :english, :spanish, :italian, :german, :french)
     end
   end
 end
