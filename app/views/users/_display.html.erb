@@ -5,8 +5,8 @@
    <div class="media-body">
        <h4 class="media-heading"><%= user.first_name %>  <%= user.last_name %><small> <%= user.location %></small></h4>
        <hr style="margin:8px auto">
-       <% languages.each do |language| %>
-       <span class="label label-default"><%= language.name %></span>
+       <% user.get_languages.each do |language| %>
+       <span class="label label-default"><%= language %></span>
        <% end %><br/>
 
        <div class="About Me"><%= user.about_me %></div>

@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
 
   acts_as_messageable
 
+
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   
@@ -14,11 +15,11 @@ end
 
   def get_languages
     languages = []
-    languages << "English" if self.english > 0
-    languages << "Spanish" if self.spanish > 0
-    languages << "French" if self.french > 0
-    languages << "Italian" if self.italian > 0
-    languages << "German" if self.german > 0
+    languages << "English level #{self.english}" if self.english > 0
+    languages << "Spanish level #{self.spanish}" if self.spanish > 0
+    languages << "French level #{self.french}" if self.french > 0
+    languages << "Italian level #{self.italian}" if self.italian > 0
+    languages << "German level #{self.german}" if self.german > 0
     languages
   end
 
