@@ -276,7 +276,40 @@ h4 {
 }
 
 .btn-new-conversation {
-	margin-bottom: 20px;
 	margin-top: 20px;
 	float: right;
+}
+
+.titlebar {
+	background-color: #FF7E6B;
+	margin: 0 auto;
+	padding: 0;
+	color: white;
+}
+
+.messages_all {
+	height: 100%;
+}
+
+.column-xs-8 {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.btn {
+    padding: 10px;
+    border: 0 none;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: $fancy-font-family;
+}
+
+.btn-primary {
+	background: #7A2921;
+	color: white;
+}
+
+.btn-danger {
+	background: #791205;
 }

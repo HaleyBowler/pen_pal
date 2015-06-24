@@ -1,17 +1,17 @@
-<div class="container">
-  <div class="conversation_row1">
+<div class="row titlebar">
+  <div row="container">
     <div class="col-xs-4 col-sm-4">
       <h4>YOUR CONVERSATIONS </h4>
     </div>
 
     <div class="col-xs-8 col-sm-8">
-      <%=link_to 'Start new conversation', new_message_path, class: 'btn btn-lg btn-primary btn-new-conversation' %>
+      <%=link_to 'New conversation', new_message_path, class: 'btn btn-lg btn-primary btn-new-conversation' %>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="conversation_row2">
+<div class="row messages_all">
+  <div row="container">
     <div class="col-xs-4 col-sm-4">
         <ul class="nav nav-pills nav-stacked">
           <%= mailbox_section 'inbox', @box %>
