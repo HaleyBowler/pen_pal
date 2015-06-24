@@ -9,6 +9,8 @@
   </div>
 </div>
 
+<a><%= link_to "Update Language Settings", edit_user_path(current_user), class: "btn btn-large btn-primary message-button" %></a>
+
 <div class="container user_table">
   <div class="row">
 		<% @users.each do |user| %>
