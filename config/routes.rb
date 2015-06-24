@@ -18,7 +18,17 @@ Rails.application.routes.draw do
   end
 
   resources :messages, only: [:new, :create]
-  resources :users, only: [:index]
+  resources :users, only: [:index, :edit, :update]
+
+  # get 'users/:id/edit' => 'users#edit'
+  # put 'users/:id' => 'users#update'
+
+  # (get) new -> sends you the FORM to create a new user
+  # (post) create -> actually creates the user in the database
+
+  # (get) edit -> sends you the FORM to edit a  user
+  # (put) update -> actually update the user
+
 
   # resources :languages, only: [:new]
   # The priority is based upon order of creation: first created -> highest priority.
