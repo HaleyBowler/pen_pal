@@ -12,6 +12,16 @@ def self.filter(query)
     query.blank? ? User.all : User.where("lower(first_name) || lower(last_name) || lower(location) LIKE '%#{query.downcase}%'")
 end
 
+  def get_languages
+    languages = []
+    languages << "English" if self.english > 0
+    languages << "Spanish" if self.spanish > 0
+    languages << "French" if self.french > 0
+    languages << "Italian" if self.italian > 0
+    languages << "German" if self.german > 0
+    languages
+  end
+
 def mailboxer_email(object)
   #Check if an email should be sent for that object
   #if true

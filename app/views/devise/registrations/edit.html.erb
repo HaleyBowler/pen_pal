@@ -25,6 +25,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :english %><br />
+    <%= f.select :english, options_for_select(%w[0 1 2 3 4 5]) %>
+  </div>  
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email %>
   </div>
