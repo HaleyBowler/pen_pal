@@ -10,6 +10,6 @@
        <% end %><br/>
 
        <div class="About Me"><%= user.about_me %></div>
-       <a><%= link_to "Message This User", new_message_path(:to => user.id), class: "btn btn-large btn-primary" %></a>
+       <a><%= link_to "Message This User", new_message_path(:to => user.id), class: "btn btn-large btn-primary message-button" %></a>
    </div>
 </div>

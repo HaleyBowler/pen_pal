@@ -8,6 +8,10 @@ class User < ActiveRecord::Base
   has_many :proficiencies
   has_many :languages, through: :proficiencies
 
+def self.filter(query)
+    query.blank? ? User.all : User.where("lower(first_name) || lower(last_name) || lower(location) LIKE '%#{query.downcase}%'")
+end
+
 def mailboxer_email(object)
   #Check if an email should be sent for that object
   #if true

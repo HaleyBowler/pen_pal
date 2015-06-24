@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def after_sign_in_path_for(users)
-	  users_path
+	  home_index_path
 	end
 
 	def redirect_back_or(path)
