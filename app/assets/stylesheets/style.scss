@@ -68,6 +68,10 @@ h3 {
 	text-align: center;
 }
 
+h4 {
+	
+}
+
 p {
 	font-family: $fancy-font-family;
 	font-size: 20px;
@@ -252,8 +256,6 @@ ul {
 	}
 }
 
-
-
 .actions {
 	font-family: $fancy-font-family;
 	font-size: 15px;
@@ -264,6 +266,7 @@ ul {
 	padding: 0 auto;
 	text-align: center;
 }
+<<<<<<< HEAD
 .form-horizontal {
 	margin: 30px;
 	padding: 10px;
@@ -277,3 +280,24 @@ ul {
 	margin: 50px;
 	padding: 20px;
 }
+=======
+
+.profile_pic {
+	width: 100px;
+	height: 100px;
+}
+
+.new_conversation_button {
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.conversation_title {
+	font-family: $fancy-font-family;
+	font-size: 25px;
+	text-align: left;
+	padding: 20px;
+	background-color: white;
+	color: black;
+>>>>>>> 2639bb3cdf1ec14ff58d8a0d7d55696c1cad8f4a
