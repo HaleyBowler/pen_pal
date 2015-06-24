@@ -107,6 +107,66 @@ ul {
 	height: 700px;
 }
 
+.welcome-page-link {
+	display: inline;
+	padding: 0px 50px 0px 50px;
+	font-family: $primary-font-family;
+	font-size: 20px;
+}
+
+.navbar {
+	margin: 0;
+}
+
+.navbar_categories {
+	text-align: right;
+	list-style-type: none;
+	padding: 13px;
+	background: black;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.chatable {
+	font-size: 30px;
+	text-align: left;
+	padding: 10px;
+	font-family: $secondary-font-family;
+	color: white;
+	margin-left: 20px;
+	margin-top: 60px;
+
+	&:hover, &:visited {
+		text-decoration: none;
+		color: white;
+	}
+	margin: 0 auto;
+	padding: 0;
+	background: black;
+}
+
+.navbar_categories {
+	text-align: right;
+	list-style-type: none;
+	padding: 13px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.chatable {
+	font-size: 30px;
+	text-align: left;
+	padding: 10px;
+	font-family: $secondary-font-family;
+	color: white;
+	margin-top: 60px;
+	
+	&:hover, &:visited {
+		text-decoration: none;
+		color: white;
+	}
+}
+
 .toolbarcategories {
 	display: inline;
 	padding: 20px;
@@ -187,11 +247,15 @@ ul {
 
 //user signup//
 
-.row_signup {
+	.row_signup {
+		height: 600px;
+	}
+
+	.row_editprofile {
 	height: 600px;
 	padding: 0 auto;
 	text-align: center;
-}
+	}
 
 
 //conversations//
