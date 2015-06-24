@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624092422) do
+ActiveRecord::Schema.define(version: 20150624182949) do
 
   create_table "languages", force: :cascade do |t|
     t.string   "name"
@@ -101,11 +101,11 @@ ActiveRecord::Schema.define(version: 20150624092422) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.text     "about_me"
-    t.integer  "english"
-    t.integer  "french"
-    t.integer  "spanish"
-    t.integer  "italian"
-    t.integer  "german"
+    t.string   "english"
+    t.string   "spanish"
+    t.string   "french"
+    t.string   "german"
+    t.string   "italian"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

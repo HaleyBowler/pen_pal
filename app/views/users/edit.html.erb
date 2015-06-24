@@ -26,17 +26,17 @@
 
 <div class="language-header">
    <h1 class="language-edit">Language Settings
-      <small>Select your skill level from 0-5</small>
+      <small>Select your skill level</small>
    </h1>
 </div>
 <div class="edit-language-form">
 <%= simple_form_for @user do |f| %>
-  <%= f.input :english, :prompt => "Set your skill level", :collection => 0..5, wrapper_html: { class: 'language' } %>
-  <%= f.input :spanish, :collection => 0..5 %>
-  <%= f.input :french, :collection => 0..5 %>
-  <%= f.input :italian, :collection => 0..5 %>
-  <%= f.input :german, :collection => 0..5 %>
-   <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+  <%= f.input :english, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+  <%= f.input :spanish, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' }  %>
+  <%= f.input :french, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+  <%= f.input :italian, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+  <%= f.input :german, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
+   <%= button_tag(type: 'submit', class: "btn btn-primary edit-language-btn") do %>
     <i class="icon-ok icon-white"></i> Update
   <% end %>
 <% end %>

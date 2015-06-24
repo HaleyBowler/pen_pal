@@ -15,11 +15,11 @@ end
 
   def get_languages
     languages = []
-    languages << "English level #{self.english}" if self.english > 0
-    languages << "Spanish level #{self.spanish}" if self.spanish > 0
-    languages << "French level #{self.french}" if self.french > 0
-    languages << "Italian level #{self.italian}" if self.italian > 0
-    languages << "German level #{self.german}" if self.german > 0
+    languages << "English #{self.english}" if self.english != "Not Interested"
+    languages << "Spanish #{self.spanish}" if self.spanish != "Not Interested"
+    languages << "French #{self.french}" if self.french != "Not Interested"
+    languages << "Italian #{self.italian}" if self.italian != "Not Interested"
+    languages << "German #{self.german}" if self.german != "Not Interested"
     languages
   end
 

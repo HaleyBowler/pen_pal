@@ -5,7 +5,7 @@
     </div>
 
     <div class="col-xs-8 col-sm-8">
-      <%=link_to 'New conversation', new_message_path, class: 'btn btn-lg btn-primary btn-new-conversation' %>
+      <%=link_to 'New conversation', new_message_path, class: 'btn btn-lg btn-primary btn-sm btn-new-conversation' %>
     </div>
   </div>
 </div>
@@ -13,10 +13,10 @@
 <div class="row messages_all">
   <div row="container">
     <div class="col-xs-4 col-sm-4">
-        <ul class="nav nav-pills nav-stacked">
-          <%= mailbox_section 'inbox', @box %>
-          <%= mailbox_section 'sent', @box %>
-          <%= mailbox_section 'trash', @box %>
+        <ul class="nav nav-pills nav-stacked mailbox_options">
+          <li><%= mailbox_section 'inbox', @box %></li>
+          <li><%= mailbox_section 'sent', @box %></li>
+          <li><%= mailbox_section 'trash', @box %></li>
         </ul>
     </div>
 

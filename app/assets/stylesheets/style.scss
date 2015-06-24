@@ -7,154 +7,181 @@ $secondary-font-family: Maven Pro, sans-serif;
 $fancy-font-family: Lato, sans-serif;
 
 #users_search {
-  margin: 20px auto;
-  padding: 0px 70px;
+margin: 20px auto;
+padding: 0px 70px;
 
-  img {
-    display: block;
-    padding: 10px 20px;
-    float: left;
-  }
+img {
+display: block;
+padding: 10px 20px;
+float: left;
+}
 
-  input[type="text"] {
-    float: left;
-    display: block;
-    width: 320px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 5px 10px;
-  }
+input[type="text"] {
+float: left;
+display: block;
+width: 320px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+font-size: 25px;
+padding: 5px 10px;
+}
 }
 
 .message-button {
-	margin-top: 10px;
+margin-top: 10px;
 }
 .home-heading {
-	text-align: justify;
+text-align: justify;
 }
 
 .new-message {
-	border: 20px;
-	padding: 10px;
+border: 20px;
+padding: 10px;
 }
 
 .home-sub {
-	text-align: justify;
+text-align: justify;
 }
 
 body {
-	padding-top: 45px;
+padding-top: 45px;
 }
 
 h1 {
-	font-family: $secondary-font-family;
-	font-size: 200px;
-	text-align: center;
-	margin-top: 50px;
+font-family: $secondary-font-family;
+font-size: 200px;
+text-align: center;
+margin-top: 50px;
 }
 
 h2 {
-	font-family: $primary-font-family;
-	font-size: 50px;
-	margin-top: 50px;
-	margin-bottom: 20px;
+font-family: $primary-font-family;
+font-size: 50px;
+margin-top: 50px;
+margin-bottom: 20px;
 }
 
 h3 {
-	font-family: $primary-font-family;
-	font-size: 25px;
-	text-align: center;
+font-family: $primary-font-family;
+font-size: 25px;
+text-align: center;
 }
 
 h4 {
-	
+
 }
 
 p {
-	font-family: $fancy-font-family;
-	font-size: 20px;
-	margin-left: 30px;
-	margin-right: 30px;
+font-family: $fancy-font-family;
+font-size: 20px;
+margin-left: 30px;
+margin-right: 30px;
 }
 
 
 ul {
-	text-align: center;
+text-align: center;
 }
 
-  .media
-    {
-        /*box-shadow:0px 0px 4px -2px #000;*/
-        margin: 20px 0;
-        padding:30px;
-    }
-    .dp
-    {
-        border:10px solid #eee;
-        transition: all 0.2s ease-in-out;
-    }
-    .dp:hover
-    {
-        border:2px solid #eee;
-        transform:rotate(360deg);
-        -ms-transform:rotate(360deg);  
-        -webkit-transform:rotate(360deg);  
-        /*-webkit-font-smoothing:antialiased;*/
-    }
+.media
+{
+/*box-shadow:0px 0px 4px -2px #000;*/
+margin: 20px 0;
+padding:30px;
+}
+.dp
+{
+border:10px solid #eee;
+transition: all 0.2s ease-in-out;
+}
+.dp:hover
+{
+border:2px solid #eee;
+transform:rotate(360deg);
+-ms-transform:rotate(360deg);  
+-webkit-transform:rotate(360deg);  
+/*-webkit-font-smoothing:antialiased;*/
+}
 
-    .label label-default {
-    color: blue; 
-    }
+.label label-default {
+color: blue; 
+}
 
-    .users_list {
-    	list-style-type: none;
-    }
+.users_list {
+list-style-type: none;
+}
 
 .container_1 {
-	height: 700px;
+height: 700px;
 }
 
 .container_2 {
-	height: 700px;
-	background-color: white;
+height: 700px;
+background-color: white;
 }
 
 .jumbotron-main {
-	background: url(http://i.imgur.com/pFatem5.jpg);
-	background-size: cover;
-	padding-bottom: 320px;
-	background-position: top;
-	background-attachment: fixed;
-	height: 700px;
+background: url(http://i.imgur.com/pFatem5.jpg);
+background-size: cover;
+padding-bottom: 320px;
+background-position: top;
+background-attachment: fixed;
+height: 700px;
 }
 
 .jumbotron-second {
-	background: url(http://i.imgur.com/j1mR479.jpg);
-	background-size: cover;
-	padding-bottom: 320px;
-	background-position: top;
-	background-attachment: fixed;
-	height: 700px;
+background: url(http://i.imgur.com/j1mR479.jpg);
+background-size: cover;
+padding-bottom: 320px;
+background-position: top;
+background-attachment: fixed;
+height: 700px;
 }
 
 .welcome-page-link {
-	display: inline;
-	padding: 0px 50px 0px 50px;
-	font-family: $primary-font-family;
-	font-size: 20px;
+display: inline;
+padding: 0px 50px 0px 50px;
+font-family: $primary-font-family;
+font-size: 20px;
 }
 
 .navbar {
-	margin: 0;
+<<<<<<< HEAD
+margin: 0;
+}
+
+.navbar_categories {
+text-align: right;
+list-style-type: none;
+padding: 13px;
+background: black;
+vertical-align: middle;
+margin: 0;
+}
+
+.chatable {
+font-size: 30px;
+text-align: left;
+padding: 10px;
+font-family: $secondary-font-family;
+color: white;
+margin-left: 20px;
+margin-top: 60px;
+
+&:hover, &:visited {
+text-decoration: none;
+color: white;
+}
+	margin: 0 auto;
+	padding: 0;
+	background: black;
 }
 
 .navbar_categories {
 	text-align: right;
 	list-style-type: none;
 	padding: 13px;
-	background: black;
 	vertical-align: middle;
 	margin: 0;
 }
@@ -165,7 +192,6 @@ ul {
 	padding: 10px;
 	font-family: $secondary-font-family;
 	color: white;
-	margin-left: 20px;
 	margin-top: 60px;
 	
 	&:hover, &:visited {
@@ -175,94 +201,97 @@ ul {
 }
 
 .toolbarcategories {
-	display: inline;
-	padding: 20px;
-	a {  color: white; }
-	font-family: $primary-font-family;
+display: inline;
+padding: 20px;
+a {  color: white; }
+font-family: $primary-font-family;
 }
 
 .random-users {
-	list-style-type: none;
+list-style-type: none;
 }
 
 .row_one {
-	font-family: $primary-font-family;
-	font-size: 70px;
-	text-align: center;
-	color: black;
-	padding-top: 40px;
+font-family: $primary-font-family;
+font-size: 70px;
+text-align: center;
+color: black;
+padding-top: 40px;
 }
 
 .row_one_second {
-	font-family: $fancy-font-family;
-	font-size: 40 px;
-	text-align: center;
-	font-size: 25px;
-	color: black;
+font-family: $fancy-font-family;
+font-size: 40 px;
+text-align: center;
+font-size: 25px;
+color: black;
 }
 
 .row_one_third {
-	font-family: $fancy-font-family;
-	font-size: 18px;
-	text-align: center;
-	color: black;
+font-family: $fancy-font-family;
+font-size: 18px;
+text-align: center;
+color: black;
 }
 
 .row_two {
-	font-family: $primary-font-family;
-	text-align: center;
-	font-size: 60px;
-	color: black;
+font-family: $primary-font-family;
+text-align: center;
+font-size: 60px;
+color: black;
 }
 
 
 .row_two_categories {
-	font-family: $fancy-font-family;
-	font-size: 20 px;
-	text-align: center;
-	color: black;
+font-family: $fancy-font-family;
+font-size: 20 px;
+text-align: center;
+color: black;
 }
 
 .display-img {
-  width: 100%;
-  padding: 10px;
+width: 100%;
+padding: 10px;
 }
 
 .display-img2 {
-	width: 50%;
-  padding: 10px;
+width: 50%;
+padding: 10px;
 }
 
 .row_login {
-	height: 600px;
-	padding: 0 auto;
-	text-align: center;
+height: 600px;
+padding: 0 auto;
+text-align: center;
 }
 
 .row_signup {
-	height: 600px;
-	padding: 0 auto;
-	text-align: center;
+height: 600px;
+padding: 0 auto;
+text-align: center;
 
-	input[type='file'] {
-		width: 200px;
-		display: inline;
-	}
+input[type='file'] {
+width: 200px;
+display: inline;
+}
 
-	.field {
-		font-family: $fancy-font-family;
-		font-size: 15px;
-		text-align: center;
-	}
+.field {
+font-family: $fancy-font-family;
+font-size: 15px;
+text-align: center;
+}
 }
 
 .actions {
-	font-family: $fancy-font-family;
-	font-size: 15px;
+font-family: $fancy-font-family;
+font-size: 15px;
 }
 
 .row_editprofile {
-	height: 600px;
+<<<<<<< HEAD
+height: 600px;
+padding: 0 auto;
+text-align: center;
 	padding: 0 auto;
 	text-align: center;
 }
@@ -273,23 +302,45 @@ ul {
 }
 
 .language-edit {
-	font-size: 50px; 
+font-size: 50px; 
 }
 
 .edit-language-form {
-	margin: 50px;
-	padding: 20px;
+margin: 50px auto;
+padding: 20px;
+width: 380px;
+background-color: grey;
 }
 
 .profile_pic {
-	width: 100px;
-	height: 100px;
+width: 100px;
+height: 100px;
 }
 
+.new_conversation_button {
+float: left;
+margin-left: 30px;
+margin-top: 20px;
+}
+
+.conversation_title {
+font-family: $fancy-font-family;
+font-size: 25px;
+text-align: left;
+padding: 20px;
+background-color: white;
+color: black;
+}
+
+.language {
+width: 200px; 
+margin: 0 auto; 
+padding: 10px; 
+}
 h4 {
 	font-family: $fancy-font-family;
 	font-size: 30px;
-	text-align: left;
+	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
@@ -300,14 +351,19 @@ h4 {
 }
 
 .titlebar {
-	background-color: #FF7E6B;
+	background-color: white;
 	margin: 0 auto;
 	padding: 0;
-	color: white;
+	color: black;
 }
 
 .messages_all {
 	height: 100%;
+}
+
+.mailbox_options {
+	background-color: white;
+
 }
 
 .column-xs-8 {
@@ -320,17 +376,17 @@ h4 {
     border: 0 none;
     font-weight: 200;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-family: $fancy-font-family;
 }
 
 .btn-primary {
-	background: #7A2921;
-	color: white;
+	background: #F2CCC3;
+	color: black;
 }
 
 .btn-danger {
 	background: #791205;
+	color: white;
 }
 
 .conversation_title {
@@ -341,3 +397,34 @@ h4 {
 	background-color: white;
 	color: black;
 }
+
+.nav-packed {
+	height: 800px;
+}
+
+.active {
+	background-color: white;;
+}
+
+.nav-pills {
+	color: white;
+	.active { 
+		a {
+			background-color: #3D1308 !important; 
+		}
+	}
+	li {
+		a:hover {
+			background-color: #F2CCC3;
+    		color: white;
+    	}
+
+    	a:focus {
+    		background-color: #3D1308 !important;
+    	}
+    	a:active {
+    		background-color: #3D1308 !important;
+    	}
+    	    	
+    }
+} 

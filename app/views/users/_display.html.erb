@@ -1,4 +1,4 @@
-<div class="media">
+<!--<div class="media">
     <a class="pull-left" href="#">
        <%= image_tag user.avatar.url(:thumb), :class =>'profile_pic' %>
    </a>
@@ -12,6 +12,18 @@
        <div class="About Me"><%= user.about_me %></div>
        <a><%= link_to "Message This User", new_message_path(:to => user.id), class: "btn btn-large btn-primary message-button" %></a>
    </div>
+</div>-->
+
+
+<a><%= image_tag user.avatar.url(:thumb), :class =>'profile_pic' %></a>
+<div>
+  <h4><%= user.first_name %>  <%= user.last_name %><small> <%= user.location %></small></h4>
+  <% user.get_languages.each do |language| %>
+  <span class="label label-default"><%= language %></span>
+  <% end %><br/>
+  <div class="About Me"><%= user.about_me %></div>
+  <a><%= link_to "Message This User", new_message_path(:to => user.id), class: "btn btn-large btn-primary message-button" %></a>
 </div>
+
     
 
