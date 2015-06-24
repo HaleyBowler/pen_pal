@@ -1,13 +1,76 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,900);
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 $primary-font-family: Poiret One, sans-serif;
 $secondary-font-family: Maven Pro, sans-serif;
-$fancy-font-family: Lora, sans-serif;
+$fancy-font-family: Lato, sans-serif;
+
+#users_search {
+  margin: 20px auto;
+  padding: 0px 70px;
+
+  img {
+    display: block;
+    padding: 10px 20px;
+    float: left;
+  }
+
+  input[type="text"] {
+    float: left;
+    display: block;
+    width: 320px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px 10px;
+  }
+}
+
+.message-button {
+	margin-top: 10px;
+}
+.home-heading {
+	text-align: justify;
+}
+
+.new-message {
+	border: 20px;
+	padding: 10px;
+}
+
+.home-sub {
+	text-align: justify;
+}
 
 body {
-	padding-top: 50px;
+	padding-top: 45px;
+}
+
+h1 {
+	font-family: $secondary-font-family;
+	font-size: 200px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+h3 {
+	font-family: $primary-font-family;
+	font-size: 25px;
+	text-align: center;
+}
+
+p {
+	font-family: $fancy-font-family;
+	font-size: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+ul {
+	text-align: center;
 }
 
   .media
@@ -38,38 +101,31 @@ body {
     	list-style-type: none;
     }
 
-h1 {
-	font-family: $secondary-font-family;
-	font-size: 100px;
-	text-align: center;
-	margin-top: 60px;
+.container_1 {
+	height: 700px;
 }
 
-.container 
-	{
-	font-family: $primary-font-family;
-	}
-
-h3 {
-	font-family: $primary-font-family;
-	font-size: 25px;
-	text-align: center;
+.container_2 {
+	height: 700px;
+	background-color: white;
 }
 
-p {
-	font-family: $fancy-font-family;
-	font-size: 20px;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
-.first_row {
-	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
+.jumbotron-main {
+	background: url(http://i.imgur.com/pFatem5.jpg);
 	background-size: cover;
-	padding-top: 30px;
 	padding-bottom: 320px;
 	background-position: top;
 	background-attachment: fixed;
+	height: 700px;
+}
+
+.jumbotron-second {
+	background: url(http://i.imgur.com/j1mR479.jpg);
+	background-size: cover;
+	padding-bottom: 320px;
+	background-position: top;
+	background-attachment: fixed;
+	height: 700px;
 }
 
 .welcome-page-link {
@@ -77,10 +133,6 @@ p {
 	padding: 0px 50px 0px 50px;
 	font-family: $primary-font-family;
 	font-size: 20px;
-}
-
-ul {
-	text-align: center;
 }
 
 .navbar {
@@ -115,9 +167,57 @@ ul {
 	display: inline;
 	padding: 20px;
 	a {  color: white; }
+	font-family: $primary-font-family;
 }
 
 .random-users {
 	list-style-type: none;
 }
 
+.row_one {
+	font-family: $primary-font-family;
+	font-size: 70px;
+	text-align: center;
+	color: black;
+	padding-top: 40px;
+}
+
+.row_one_second {
+	font-family: $fancy-font-family;
+	font-size: 40 px;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+
+.row_one_third {
+	font-family: $fancy-font-family;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+
+.row_two {
+	font-family: $primary-font-family;
+	text-align: center;
+	font-size: 60px;
+	color: black;
+}
+
+
+.row_two_categories {
+	font-family: $fancy-font-family;
+	font-size: 20 px;
+	text-align: center;
+	color: black;
+}
+
+.display-img {
+  width: 100%;
+  padding: 10px;
+}
+
+.display-img2 {
+	width: 50%;
+  padding: 10px;
+}

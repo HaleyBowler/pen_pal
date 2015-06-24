@@ -1,9 +1,11 @@
-<%= form_tag "/users", method: 'GET', id: 'users_search' do %>
-  <%= text_field_tag 'q', params[:q] %>
-  <div style="clear: both"></div>
-<% end %>
-
-<br/><br/>
+<div class="jumbotron jumbotron-home">
+  <div class="container home">
+    <div class="page-header">
+    <h1 class="home-heading">Welcome to Chatable</h1>
+    <p class="home-sub">Start a chat instantly!</p>
+    </div>
+  </div>
+</div>
 <div class="container user_table">
   <div class="row">
 		<% @users.each do |user| %>
@@ -15,9 +17,3 @@
 		<% end %>
   </div>
 </div>
-<%= will_paginate @users, renderer: BootstrapPagination::Rails %>
-    
-
-
-
-
