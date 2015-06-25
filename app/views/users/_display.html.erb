@@ -1,6 +1,6 @@
 <a><%= image_tag user.avatar.url(:medium), :class =>'profile_pic' %></a>
 <div>
-  <h4><%= user.first_name %>  <%= user.last_name %><br/><small> <%= user.location %></small></h4>
+  <h4 class="profile-heading"><%= user.first_name %>  <%= user.last_name %><br/><small> <%= user.location %></small></h4>
   <% user.get_languages.each do |language| %>
   <span class="label label-primary language-tags"><%= language %></span>
   <% end %><br/>
