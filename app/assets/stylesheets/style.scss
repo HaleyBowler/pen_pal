@@ -265,7 +265,11 @@ h4 {
 h6 {
 	font-family: $fancy-font-family;
 	font-size: 20px;
+	margin-top: 0;
 	padding: 20px;
+	height: 525px;
+	background-color: #D3F3EE;
+	border-radius: 25px;
 }
 
 .btn-new-conversation {
