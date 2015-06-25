@@ -98,10 +98,13 @@ h7 {
 h8 {
 	font-family: $fancy-font-family;
 	font-size: 20px;
-	margin-left: 20px;
+	margin-left: 30px;
 	color: #141535;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 30px;
+}
+
+.textbox {
+	padding: 20px;
 }
 
 h9 {
@@ -273,7 +276,6 @@ h9 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
 
 //user login//
 .row_login {
