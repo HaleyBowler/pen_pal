@@ -15,7 +15,7 @@
         <%= f.input :german, :prompt => "Set your skill level", :collection => ["Not Interested", "Beginner", "Intermediate", "Advanced", "Native Speaker"], wrapper_html: { class: 'language' } %>
       </div>
       <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary btn-sm modal-button" data-dismiss="modal">Close</button>
       <%= button_tag(type: 'submit', class: "btn btn-primary edit-language-btn") do %>
         <i class="icon-ok icon-white"></i>Update 
         <% end %>

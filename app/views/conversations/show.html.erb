@@ -15,7 +15,7 @@
 
           <div class="media-body">
             <h6 class="media-heading"><%= message.sender.first_name %></h6>
-              <h7><%= time_ago_in_words(message.created_at) %> ago</h7> <br/>
+              <h7 class="blue-time"><%= time_ago_in_words(message.created_at) %> ago</h7> <br/>
           </div>
 
           <div class="messages-body"><%= message.body %></div>
