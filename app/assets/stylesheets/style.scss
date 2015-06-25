@@ -17,16 +17,7 @@ body {
 	padding-top: 45px;
 }
 
-input[type="text"] {
-float: left;
-display: block;
-width: 320px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-font-size: 25px;
-padding: 5px 10px;
-}
+
 .navbar {
 	margin: 0;
 	background: #141535;
@@ -336,20 +327,20 @@ h6 {
 	text-transform: uppercase;;
 	.active { 
 		a {
-			background-color: #247BA0 !important; 
+			background-color: #7FB7BE !important; 
 		}
 	}
 	li {
 		a:hover {
-			background-color: #70C1B3;
+			background-color: #D3F3EE;
 			color: white;
 		}
 
 		a:focus {
-			background-color: #247BA0 !important;
+			background-color: #7FB7BE !important;
 		}
 		a:active {
-			background-color: #247BA0 !important;
+			background-color: #7FB7BE !important;
 		}
 
 	}
@@ -364,7 +355,10 @@ h6 {
 .form-group {
 	color: #141535;
 	font-family: $fancy-font-family;
-	font-size: 20px;
+
+	.form-control {
+		font-size: 16px;
+	}
 }
 
 //homepage after login//
