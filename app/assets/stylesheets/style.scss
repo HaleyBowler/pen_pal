@@ -8,7 +8,7 @@ $secondary-font-family: Maven Pro, sans-serif;
 $fancy-font-family: Lato, sans-serif;
 
 
-#users_search {
+.users_search {
 margin: 20px auto;
 padding: 0px 70px;
 }
@@ -464,6 +464,11 @@ h7 {
 }
 
 //homepage after login//
+.profile-heading {
+	margin: 0;
+	padding: 0;
+}
+
 .message-button {
 	margin-top: 10px;
 }
@@ -484,6 +489,8 @@ h7 {
 .profile_pic {
 	width: 200px;
 	height: 200px;
+	margin: 10px 0 10px 0;
+	padding: 0;
 }
 
 .new_conversation_button {
@@ -550,7 +557,7 @@ h7 {
 
 
 .pad-bottom {
-	padding-bottom: 50px; 
+	padding-bottom: 100px; 
 
 }
 
@@ -601,7 +608,8 @@ input[type='file'] {
 	margin: 0 auto;
 }
 
-btn {
+.blue-btn {
 	background-color: #7FB7BE;
 }
+
 
