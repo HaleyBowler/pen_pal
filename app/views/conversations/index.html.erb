@@ -1,12 +1,12 @@
 <div class="container background">
   <div class="row titlebar">
-    <div row="container">
+    <div row="container row_1_conversations">
       <div class="col-xs-4 col-sm-4">
         <h4>YOUR CONVERSATIONS </h4>
       </div>
 
       <div class="col-xs-8 col-sm-8">
-        <%=link_to 'New Message', new_message_path, class: 'btn btn-lg btn-primary btn-sm btn-new-conversation' %>
+        <%=link_to 'NEW MESSAGE', new_message_path, class: 'btn btn-lg btn-primary btn-sm btn-new-conversation' %>
       </div>
     </div>
   </div>
@@ -29,7 +29,11 @@
             <% end %>
 
             <ul class="list-group">
+              <% if @conversations.empty? %>
+                <h6>No Messages to Display</h6>
+              <% else %>
               <%= render partial: 'conversations/conversation', collection: @conversations %>
+              <% end %>
             </ul>
           </div>
       </div>
