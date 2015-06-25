@@ -22,7 +22,7 @@
 			</div>  
 			<ul class="navbar_categories">
 				<% if user_signed_in? %>
-				<li class="toolbarcategories"><%= link_to 'PROFILE', edit_user_registration_path %></li>
+				<li class="toolbarcategories"><%= link_to 'EDIT PROFILE', edit_user_registration_path %></li>
 				<li class="toolbarcategories"><%= link_to 'FIND PALS', users_path %></li>
 				<li class="toolbarcategories"><%= link_to 'YOUR MESSAGES', conversations_path %></li>
 				<li class="toolbarcategories"><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete %></li>
