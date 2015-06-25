@@ -9,4 +9,7 @@
     <% end %>
   </div>
 </div>
-<%= will_paginate @users, renderer: "BootstrapPagination::Rails" %>
+
+<ul class="pager">
+<%= will_paginate @users, page_links: false, container: false %>
+</ul>
