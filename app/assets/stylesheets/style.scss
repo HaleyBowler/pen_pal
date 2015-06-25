@@ -6,12 +6,27 @@ $primary-font-family: Poiret One, sans-serif;
 $secondary-font-family: Maven Pro, sans-serif;
 $fancy-font-family: Lato, sans-serif;
 
+
+#users_search {
+margin: 20px auto;
+padding: 0px 70px;
+}
 //layout//
 
 body {
 	padding-top: 45px;
 }
 
+input[type="text"] {
+float: left;
+display: block;
+width: 320px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+font-size: 25px;
+padding: 5px 10px;
+}
 .navbar {
 	margin: 0;
 	background: #141535;
@@ -152,19 +167,6 @@ ul {
 	margin: 0;
 }
 
-.chatable {
-	font-size: 30px;
-	text-align: left;
-	padding: 10px;
-	font-family: $secondary-font-family;
-	color: white;
-	margin-top: 60px;
-	
-	&:hover, &:visited {
-		text-decoration: none;
-		color: white;
-	}
-}
 
 .toolbarcategories {
 	display: inline;
@@ -234,6 +236,7 @@ ul {
 }
 
 .field {
+
 	font-family: $fancy-font-family;
 	font-size: 15px;
 	text-align: center;
@@ -325,7 +328,7 @@ h6 {
 }
 
 .active {
-	background-color: white;;
+	background-color: white;
 }
 
 .nav-pills {
@@ -383,8 +386,8 @@ h6 {
 }
 
 .profile_pic {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 }
 
 .new_conversation_button {
@@ -422,7 +425,8 @@ h6 {
 
 //user index//
 
-#users_search {
+
+.users_search {
 	margin: 20px auto;
 	padding: 0px 70px;
 
@@ -444,9 +448,18 @@ h6 {
 	}
 }
 
+.search-button {
+	height: 49px;
+}
 
+.language-tags {
+	background-color: #b2dbbf;
+}
 
+.pad-bottom {
+	padding-bottom: 50px; 
 
+}
 
 
 

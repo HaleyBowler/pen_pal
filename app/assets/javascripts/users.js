@@ -1,10 +1,10 @@
 $(function() {
   // hook up the projects search box to refresh projects
   // on every keypress (specifically: keyup)
-  $('#users_search').on('keyup', 'input', function() {
+  $('.users_search').on('keyup', 'input', function() {
     $.get(
-      $('#users_search').attr('action'),
-      $('#users_search').serialize(), // {"q": "hello"}
+      $('.users_search').attr('action'),
+      $('.users_search').serialize(), // {"q": "hello"}
       function(data) {
         $('#users').html(data);
       },

@@ -1,7 +1,7 @@
 <!--page to search through all the users -->
 
-<%= form_tag "/users", method: 'GET', id: 'users_search' do %>
-  <%= text_field_tag 'q', params[:q] %>
+<%= form_tag "/users", method: 'GET', class: ' form-inline users_search' do %>
+  <%= text_field_tag 'q', params[:q], placeholder: "Enter name or location" %>
   <div style="clear: both"></div>
 <% end %>
 <br/><br/>
