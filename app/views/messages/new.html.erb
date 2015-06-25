@@ -4,14 +4,14 @@
   <h4> NEW MESSAGE </h4>
   <div class="form-group">
     <%= label_tag 'message[subject]', 'Subject' %>
+    <br />
     <%= text_field_tag 'message[subject]', nil, class: 'form-control', required: true %>
   </div>
- 
+  <br \>
   <div class="form-group">
     <%= label_tag 'message[body]', 'Message' %>
     <%= text_area_tag 'message[body]', nil, cols: 3, class: 'form-control', required: true %>
   </div>
- 
   <div class="form-group">
     <%= label_tag 'recipients', 'Choose Recipients' %>
     <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it', required: true %>
