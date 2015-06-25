@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700);
 
-$primary-font-family: Poiret One, sans-serif;
+$primary-font-family: Julius Sans One, sans-serif;
 $secondary-font-family: Maven Pro, sans-serif;
 $fancy-font-family: Lato, sans-serif;
 
@@ -59,6 +60,7 @@ h1 {
 	font-size: 200px;
 	text-align: center;
 	margin-top: 50px;
+	color: #141535;
 }
 
 h2 {
@@ -66,12 +68,14 @@ h2 {
 	font-size: 50px;
 	margin-top: 50px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 h3 {
-	font-family: $primary-font-family;
+	font-family: $fancy-font-family;
 	font-size: 25px;
 	text-align: center;
+	color: #141535;
 }
 
 p {
@@ -79,6 +83,31 @@ p {
 	font-size: 20px;
 	margin-left: 30px;
 	margin-right: 30px;
+	padding: 20px;
+	font-style: bold;
+}
+
+h7 {
+	font-family: $primary-font-family;
+	font-size: 20px;
+	margin-left: 20px;
+	font-style: bold;
+	color: #FF1654;
+}
+
+h8 {
+	font-family: $fancy-font-family;
+	font-size: 20px;
+	margin-left: 20px;
+	color: #141535;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h9 {
+	font-family: $primary-font-family;
+	font-size: 70px;
+	color: #141535;
 }
 
 .navbar_categories {
@@ -90,8 +119,21 @@ p {
 }
 
 .container_2 {
-	height: 700px;
+	height: 250px;
 	background-color: white;
+}
+
+.container_3 {
+	height: 500px;
+	background: url(http://i.imgur.com/FCTwLgs.jpg?1);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container_4 {
+	height: 270px;
+	background-color: #141535;
+	background-attachment: fixed;
 }
 
 .jumbotron-main {
@@ -174,16 +216,15 @@ p {
 	font-family: $primary-font-family;
 	font-size: 70px;
 	text-align: center;
-	color: black;
+	color: #141535;
 	padding-top: 40px;
 }
 
 .row_one_second {
-	font-family: $fancy-font-family;
-	font-size: 40 px;
+	font-family: $primary-font-family;
+	font-size: 20px;
 	text-align: center;
-	font-size: 25px;
-	color: black;
+	color: #61A4AD;
 }
 
 .row_one_third {
@@ -200,6 +241,13 @@ p {
 	color: black;
 }
 
+.row_four {
+	font-family: $primary-font-family;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	margin-top: 20px;
+}
 
 .row_two_categories {
 	font-family: $fancy-font-family;
@@ -210,12 +258,20 @@ p {
 
 .display-img {
 	width: 100%;
-	padding: 10px;
+	padding: 25px;
 }
 
 .display-img2 {
 	width: 50%;
 	padding: 10px;
+}
+
+.btn-to-signup {
+	float: center;
+	background: #FF1654;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
@@ -238,6 +294,10 @@ p {
 	font-size: 15px;
 }
 
+.center-heading {
+	margin: 0 auto;
+}
+
 //user signup//
 
 	.row_signup {
@@ -250,6 +310,13 @@ p {
 	text-align: center;
 	}
 
+.submit_newuser {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
 
 //conversations//
 
@@ -485,6 +552,10 @@ h7 {
 
 }
 
+.cancel {
+	text-align: center;
+	font-family: $fancy-font-family;
+}
 
 
 .users_list {
@@ -523,3 +594,12 @@ input[type='file'] {
 	}
 
 }
+
+.pagination {
+	margin: 0 auto;
+}
+
+btn {
+	background-color: #7FB7BE;
+}
+
