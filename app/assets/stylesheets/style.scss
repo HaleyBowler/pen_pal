@@ -9,8 +9,8 @@ $fancy-font-family: Lato, sans-serif;
 
 
 .users_search {
-margin: 20px auto;
-padding: 0px 70px;
+	margin: 20px auto;
+	padding: 0px 70px;
 }
 //layout//
 
@@ -39,7 +39,6 @@ body {
 	font-family: $secondary-font-family;
 	color: white;
 	margin-top: 60px;
-	
 	&:hover, &:visited {
 		text-decoration: none;
 		color: white;
@@ -124,7 +123,7 @@ h9 {
 }
 
 .container_2 {
-	height: 600px;
+	height: 250px;
 	background-color: white;
 }
 
@@ -303,15 +302,15 @@ h9 {
 
 //user signup//
 
-	.row_signup {
-		height: 600px;
-	}
+.row_signup {
+	height: 600px;
+}
 
-	.row_editprofile {
+.row_editprofile {
 	height: 600px;
 	padding: 0 auto;
 	text-align: center;
-	}
+}
 
 .submit_newuser {
 	text-align: center;
@@ -357,9 +356,9 @@ h7 {
 	font-size: 35px;
 }
 .panel-default-conversation {
-  border-color: #F4ECEC;
-  width: 500px;
-  margin: 10px auto;
+	border-color: #F4ECEC;
+	width: 500px;
+	margin: 10px auto;
 }
 
 
@@ -369,7 +368,7 @@ h7 {
 }
 
 .btn-centered {
-  margin: 30 auto 0 auto;
+	margin: 30 auto 0 auto;
 }
 
 .btn-new-conversation {
@@ -491,20 +490,6 @@ h7 {
 	background-size: cover;
 }
 
-.modal-button {
-	background-color: #7fb7be;
-}
-
-.profile-heading {
-	margin: 0;
-	padding: 0;
-	background-size: 105%;
-	padding-top: 40px;
-}
-
-.message-button {
-}
-
 h17 {
 	font-family: $primary-font-family;
 	color: black;
@@ -518,27 +503,51 @@ h17 {
 	padding: 0;
 }
 
-
-.home-sub {
-	text-align: justify;
+.modal-button {
+	background-color: #7fb7be;
 }
 
-.label label-default {
-	color: blue; 
-}
-
-.profile_pic {
-	width: 200px;
-	height: 200px;
-	margin: 10px 0 10px 0;
+.profile-heading {
+	margin: 0;
 	padding: 0;
+	background-size: 105%;
+	padding-top: 40px;
 }
 
-.new_conversation_button {
-	float: left;
-	margin-left: 30px;
-	margin-top: 20px;
-}
+	.profile-heading {
+		margin: 0;
+		padding: 0;
+	}
+
+	.message-button {
+		margin-top: 10px;
+	}
+
+	.home-heading {
+		text-align: justify;
+	}
+
+
+	.home-sub {
+		text-align: justify;
+	}
+
+	.label label-default {
+		color: blue; 
+	}
+
+	.profile_pic {
+		width: 200px;
+		height: 200px;
+		margin: 10px 0 10px 0;
+		padding: 0;
+	}
+
+	.new_conversation_button {
+		float: left;
+		margin-left: 30px;
+		margin-top: 20px;
+	}
 //edit user//
 
 .row_editprofile {
@@ -597,7 +606,7 @@ h17 {
 }
 
 
-.pad-bottom {
+.pad-bottom { 
 	padding-bottom: 100px; 
 }
 
@@ -651,3 +660,4 @@ input[type='file'] {
 .blue-btn {
 	background-color: #7FB7BE;
 }
+
