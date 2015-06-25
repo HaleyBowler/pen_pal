@@ -68,6 +68,7 @@ h2 {
 	font-size: 50px;
 	margin-top: 50px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 h3 {
@@ -130,8 +131,8 @@ h9 {
 }
 
 .container_4 {
-	height: 200px;
-	background-color: white;
+	height: 250px;
+	background-color: #141535;
 	background-attachment: fixed;
 }
 
@@ -244,7 +245,8 @@ h9 {
 	font-family: $primary-font-family;
 	text-align: center;
 	font-size: 60px;
-	color: black;
+	color: white;
+	margin-top: 20px;
 }
 
 .row_two_categories {
@@ -268,7 +270,8 @@ h9 {
 	float: center;
 	background: #FF1654;
 	color: white;
-	margin: 0 auto
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
@@ -303,6 +306,13 @@ h9 {
 	text-align: center;
 	}
 
+.submit_newuser {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
 
 //conversations//
 
@@ -313,6 +323,11 @@ h4 {
 	color: #141535;
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+h6 {
+	font-family: $fancy-font-family;
+	font-size: 30px;
 }
 
 .btn-new-conversation {
@@ -525,8 +540,6 @@ input[type='file'] {
 	background-color: white;
 	color: black;
 }
-
-
 
 
 
