@@ -3,6 +3,7 @@ class HomeController < ApplicationController
 
 	def index
 		@users = get_users
+		@user = current_user
 	end
 
 	def get_users 

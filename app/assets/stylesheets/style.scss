@@ -271,6 +271,12 @@ h4 {
 	margin-bottom: 20px;
 }
 
+h6 {
+	font-family: $fancy-font-family;
+	font-size: 20px;
+	padding: 20px;
+}
+
 .btn-new-conversation {
 	margin-top: 30px;
 	float: right;
@@ -308,6 +314,8 @@ h4 {
 .btn-primary {
 	background: #FF1654;
 	color: white;
+	margin-top: 30px;
+	width: 200px;
 }
 
 .btn-danger {
@@ -351,6 +359,12 @@ h4 {
 .new-message {
 	border: 20px;
 	padding: 10px;
+}
+
+.form-group {
+	color: #141535;
+	font-family: $fancy-font-family;
+	font-size: 20px;
 }
 
 //homepage after login//
