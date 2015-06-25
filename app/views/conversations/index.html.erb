@@ -30,7 +30,7 @@
 
             <ul class="list-group no_message_box">
               <% if @conversations.empty? %>
-                <h6>No Messages to Display</h6>
+                <h6>NO MESSAGES TO DISPLAY</h6>
               <% else %>
               <%= render partial: 'conversations/conversation', collection: @conversations %>
               <% end %>
