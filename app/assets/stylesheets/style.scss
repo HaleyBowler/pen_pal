@@ -264,8 +264,41 @@ h4 {
 
 h6 {
 	font-family: $fancy-font-family;
-	font-size: 20px;
-	padding: 20px;
+	font-size: 30px;
+}
+
+h7 {
+	font-family: $fancy-font-family;
+	font-size: 15px;
+	padding: 10px;
+}
+.line-separator {
+	height:1px;
+	margin: 10px 25px 10px 25px; 
+	background:#717171;
+	border-bottom:1px solid #313030;
+}
+.messages-body {
+	font-size: 25px;
+}
+
+.panel-heading-large{
+	font-size: 35px;
+}
+.panel-default-conversation {
+  border-color: #F4ECEC;
+  width: 500px;
+  margin: 10px auto;
+}
+
+
+.conversation_pic {
+	width: 56px;
+	height: 56px;
+}
+
+.btn-centered {
+  margin: 30 auto 0 auto;
 }
 
 .btn-new-conversation {
@@ -477,4 +510,16 @@ input[type='file'] {
 	padding: 20px;
 	background-color: white;
 	color: black;
+}
+
+.form-group-conversation {
+	color: #141535;
+	font-family: $fancy-font-family;
+	width: 500px;
+	margin: 10px auto;
+
+	.form-control-conversation {
+		font-size: 16px;
+	}
+
 }
