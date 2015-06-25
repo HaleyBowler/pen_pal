@@ -3,7 +3,7 @@
 <div class="container new-message">
   <h4> NEW MESSAGE </h4>
   <div class="form-group">
-    <%= label_tag 'message[subject]', 'Subject' %>
+    <%= label_tag 'message[subject]', 'Subject'%>
     <br />
     <%= text_field_tag 'message[subject]', nil, class: 'form-control', required: true %>
   </div>
@@ -14,7 +14,7 @@
   </div>
   <div class="form-group">
     <%= label_tag 'recipients', 'Choose Recipients' %>
-    <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it', required: true %>
+    <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it', required: true, "data-placeholder": " " %>
   </div>
   <%= submit_tag 'Send', class: 'btn btn-primary' %>
 <% end %>
