@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 		languages = current_user.get_languages
 		User.all.shuffle.each do |user|
 			languages.each do |language|
-				if user.get_languages.join(',').include?(language) 
+				if (user.get_languages.join(',').include?(language)) && (user != current_user)
 					users << user
 					break
 				end

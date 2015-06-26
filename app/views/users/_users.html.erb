@@ -1,9 +1,11 @@
 <div class="container user_table with_border">
   <div class="row">
     <% @users.each do |user| %>
+    <% if user != current_user %>
       <div class="col-sm-4 pad-bottom">
           <li class="random-users"><%= render partial: "display", locals: {user: user, languages: user.languages} %></li><br \>
           </div>
+          <% end %>
      <% end %>
   </div>
 </div>
